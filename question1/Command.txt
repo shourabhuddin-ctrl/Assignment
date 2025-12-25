@@ -1,0 +1,8 @@
+Qn1
+User identification 
+command = whoami
+Explanation = to display current user 
+
+Group user account belongs to 
+command = groups
+Explanation = to show the groups my account belongs to

@@ -1,0 +1,6 @@
+Qn1 
+User identification 
+Output = shuaib
+
+Group user account belongs to 
+Output =  shuaib adm cdrom sudo dip plugdev users lpadmin
