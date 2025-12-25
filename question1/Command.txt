@@ -1,8 +1,25 @@
 Qn1
-User identification 
-command = whoami
+
+1. User identification 
+
+Command = whoami
 Explanation = to display current user 
 
+
 Group user account belongs to 
+
 command = groups
 Explanation = to show the groups my account belongs to
+
+------------------------------------------------------------------------------------------------------------------------
+
+2. Workspace Validation
+
+Command = pwd
+Explanation =  this command tells me the directory I am currently working in
+
+Command = ls -l
+Explanation = This command shows all files and folders in the directory along with detailed information
+---------------------------------------------------------------------------------------------------------------------------
+
+
