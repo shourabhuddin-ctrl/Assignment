@@ -41,6 +41,53 @@ Output = 32 user_info.txt
 ---------------------------------------------------------------------------------------------
 
 5. Learning the Tools
-Output = test_dir/sub_dir created
+Output = sub_dir
 
 ----------------------------------------------------------------------------------------------------
+
+6. Home Directory Inspection
+Ouutput = 
+
+Desktop
+Documents
+Downloads
+file_hello
+file_matter
+folder_hello
+keys
+log.txt
+Music
+myfile.txt
+Pictures
+Public
+snap
+Templates
+test_dir
+user_info.txt
+Videos
+
+--------------------------------------------------------------------------------------------------------
+
+7. Log Investigation
+Output =
+admin logged in
+admin access granted
+
+---------------------------------------------------------------------------------------------------------
+
+8. System Information Check
+Output = 6.14.0-37-generic
+
+---------------------------------------------------------------------------------------------------------------
+
+9. Network Connectivity Test
+Output = Temporary failure in name resolution
+
+--------------------------------------------------------------------------------------------------------------
+
+10. System health awareness
+Output = 00:50:58 up  9:36,  1 user,  load average: 0.29, 0.12, 0.04
+
+
+
+
