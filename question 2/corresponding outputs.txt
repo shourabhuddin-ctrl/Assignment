@@ -1,0 +1,56 @@
+Qn 2 
+
+1. Project Workspace Setup
+Output = documents directory created
+
+--------------------------------------------------------------------------------------------------
+
+2. File Creation
+Output = plan.txt created
+
+--------------------------------------------------------------------------------------------------
+
+3. Content Addition
+Output = this is a sample project plan file
+
+---------------------------------------------------------------------------------------------------
+
+4. File Metadata Verification
+Output = -rw-rw-r-- 1 shuaib shuaib 35 Dec 29 23:16 plan.txt
+
+----------------------------------------------------------------------------------------------------
+
+5. File Duplication
+Output = plan_backup.txt created
+
+----------------------------------------------------------------------------------------------------
+
+6. Directory Renaming
+Output = documents directory renamed to project_documents
+
+---------------------------------------------------------------------------------------------------
+
+7. Archival Structure
+Output = archive directory created
+
+-----------------------------------------------------------------------------------------------------
+
+8. File Organization
+Output = plan_backup.txt moved to archive directory
+
+----------------------------------------------------------------------------------------------------
+
+9. Recursive Listing
+Output =
+archive  plant.txt  plan.txt
+
+./archive:
+plan_backup.txt
+
+-------------------------------------------------------------------------------------------------------
+
+10. Path Verification
+Output = /home/shuaib/project_documents/archive/plan_backup.txt
+
+------------------------------------------------------------------------------------------------------
+

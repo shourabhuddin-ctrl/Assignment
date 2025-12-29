@@ -1,0 +1,80 @@
+Qn 2 
+
+1. Project Workspace Setup
+
+Command = mkdir -p ~/documents
+Explanation = to create a documents directory inside my home directory
+
+-----------------------------------------------------------------------------------------------------
+
+2. File Creation
+
+Command = cd ~/documents
+Explanation = to navigate into the documents directory
+
+Command = touch plan.txt
+Explanation = to create an empty file named plan.txt
+
+-----------------------------------------------------------------------------------------------------
+
+3. Content Addition
+
+Command = echo "this is a sample project plan file" > plan.txt
+Explanation = to write sample text into the plan.txt file
+
+Command = cat plan.txt
+Explanation = to display the contents of plan.txt
+
+------------------------------------------------------------------------------------------------------
+
+4. File Metadata Verification
+
+Command = ls -l plan.txt
+Explanation = to display the permissions and ownership details of the plan.txt file
+
+--------------------------------------------------------------------------------------------------------
+
+5. File Duplication
+
+Command = cp plan.txt plan_backup.txt
+Explanation = to create a copy of the plan.txt file named plan_backup.txt
+
+----------------------------------------------------------------------------------------------------------
+
+6. Directory Renaming
+
+Command = mv documents project_documents
+Explanation = to rename the documents directory to project_documents
+
+-----------------------------------------------------------------------------------------------------------
+
+7. Archival Structure
+
+Command = cd ~/project_documents
+Explanation = to navigate into the project_documents directory
+
+Command = mkdir archive
+Explanation = to create a subdirectory named archive inside project_documents
+
+-----------------------------------------------------------------------------------------------------------
+
+8. File Organization
+
+Command = mv plan_backup.txt archive/
+Explanation = to move the backup file into the archive directory
+
+-----------------------------------------------------------------------------------------------------------
+
+9. Recursive Listing
+
+Command = ls -R
+Explanation = to list all files and subdirectories inside project_documents recursively
+
+------------------------------------------------------------------------------------------------------------
+
+10. Path Verification
+
+Command = realpath archive/plan_backup.txt
+Explanation = to display the absolute path of the backup file after moving it to the archive directory
+
+-------------------------------------------------------------------------------------------------------------
