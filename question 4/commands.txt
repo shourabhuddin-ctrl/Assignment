@@ -1,0 +1,38 @@
+Qn 4 
+
+1. System Uptime Verification
+
+Command = uptime -p
+Explanation = to display the time elapsed since the system was last booted in a human-readable format
+
+------------------------------------------------------------------------------------------------------------------------
+
+2. User Process Listing
+
+Command = ps -u $USER
+Explanation = to list all processes currently running under my user account
+
+--------------------------------------------------------------------------------------------------------------------------
+
+3. CPU Usage Analysis
+
+Command = ps -u $USER --sort=-%cpu
+Explanation = to list all processes running under my user account sorted by CPU usage in descending order so the highest CPU-consuming process appears first
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+4. Background Process Execution
+
+Command = sleep 300 &
+Explanation = to start a command in the background
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+5: Process Priority Management
+
+Command = ps -u $user --sort=-%cpu
+Explanation= To identify the running process and its process ID (PID) before changing its priority.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+

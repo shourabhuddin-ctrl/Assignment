@@ -1,0 +1,50 @@
+Qn 4 
+
+
+1. System Uptime Verification
+
+Output = up 2 hours , 50 minutes
+
+-------------------------------------------------------------------------------------------------------------------
+
+2. User Process Listing
+
+Output =
+USER     PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+shuaib  2338  0.0  0.1 235668  6352 tty2     Ssl+ Jan01   0:00 /usr/libexec/
+shuaib  2358  0.0  0.4 298236 16672 tty2     Sl+  Jan01   0:00 /usr/libexec/
+shuaib  4175  0.0  0.1  11024  5336 pts/0    Ss   Jan01   0:00 bash
+shuaib  5111  0.0  0.1  13616  4768 pts/0    R+   01:02   0:00 ps -u
+
+-----------------------------------------------------------------------------------------------------------------------
+
+3. CPU Usage Analysis
+
+Output =
+USER     PID  %CPU %MEM    VSZ   RSS TTY   STAT START  TIME COMMAND
+shuaib  5177  0.0  0.1  15104  5580 pts/0 R+   01:06  0:00 ps -u --sort
+shuaib  4175  0.0  0.1  11024  5336 pts/0 Ss   Jan01  0:00 bash
+shuaib  2358  0.0  0.4 298236 16672 tty2  Sl+  Jan01  0:00 /usr/libexec/
+shuaib  2338  0.0  0.1 235668  6352 tty2  Ssl+ Jan01  0:00 /usr/libexec/
+
+------------------------------------------------------------------------------------------------------------------------
+
+4. Background Process Execution
+
+Output = 
+1] 5124
+[1]+  Running                 sleep 300 &
+
+-----------------------------------------------------------------------------------------------------------------------
+
+5: Process Priority Management
+
+Output =
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+shuaib      5164  150  0.1  15104  5608 pts/0    R+   01:19   0:00 ps -u --sort=-%c
+shuaib      4175  0.0  0.1  11284  5616 pts/0    Ss   Jan01   0:00 bash
+shuaib      2358  0.0  0.4 298236 16672 tty2     Sl+  Jan01   0:00 /usr/libexec/gno
+shuaib      2338  0.0  0.1 235668  6352 tty2     Ssl+ Jan01   0:00 /usr/libexec/gdm
+[1]+  Exit 127                [1]+ Running sleep 300
+
+-----------------------------------------------------------------------------------------------------------------------------
