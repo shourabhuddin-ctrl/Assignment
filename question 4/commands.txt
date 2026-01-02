@@ -26,13 +26,57 @@ Explanation = to list all processes running under my user account sorted by CPU 
 Command = sleep 300 &
 Explanation = to start a command in the background
 
+Command = jobs
+Explanation = to verify that the background process is running
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 5: Process Priority Management
 
-Command = ps -u $user --sort=-%cpu
-Explanation= To identify the running process and its process ID (PID) before changing its priority.
+Command = 
+sleep 300 &
+pgrep sleep
+renice 5 -p 6955
+ps -o pid,ni,cmd -p 6955
+
+Explanation= To start a background process, identify its process ID, change its priority, and verify the updated priority..
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
+6. Memory Usage Monitoring
 
+Command = free -h
+Explanation = This command displays the system’s memory (RAM) and swap usage in a human-readable format, showing total, used, free, shared, buffer/cache, and available memory.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+7.  Disk Space Inspection
+
+Command = df -h ~
+Explanation = This command displays the disk space usage of the filesystem where the home directory is located.
+The -h option shows the size in a human-readable format.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+8. Shell Identification
+
+Command = echo $SHELL
+Explanation = This command displays the name and path of the shell that is currently being used by the user.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+9. Output Redirection
+
+Command = uname -a > system_report.txt
+Explanation = This command redirects the output of the uname -a command, which displays detailed system information, into a file named system_report.txt instead of showing it on the terminal.
+
+Command = cat system_report.txt
+Explanation = This command is used to display the contents of the system_report.txt file to confirm that the system information was successfully written to the file.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+10.  Disk Usage Visualization
+
+Command = sudo apt install ncdu
+Explanation = This command is used to install the ncdu (NCurses Disk Usage) tool on the system.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
